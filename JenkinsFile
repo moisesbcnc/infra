@@ -1,0 +1,20 @@
+def remote = [:]
+remote.name = 'serverforeman'
+remote.host = 'serverforeman.uxxi.net'
+remote.user = 'root'
+remote.password = 'oracle'
+remote.allowAnyHosts = true
+pipeline {
+    agent none
+
+    stages {
+
+        stage ('Config Repo') {
+            agent any
+ 
+            steps {
+               sshCommand remote: remote, command: "cd /etc/puppetlabs/code/environments/CONF/repo-externo && git pull"
+            }
+        }
+    }
+}
