@@ -13,7 +13,7 @@ pipeline {
                 sh '''#!/bin/bash
                     ip a
                     sh  /tmp/repo-exter.sh
-                    mkdir /tmp/max2
+                    mkdir /tmp/max4
                     echo "Who 222 I'm $SHELL"
                 '''
             }
