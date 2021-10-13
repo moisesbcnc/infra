@@ -2,4 +2,4 @@
 
 set -eu
 
-echo "--- :thumbsup: Model tests"
+echo "--- :thumbsup: Model -tests"
