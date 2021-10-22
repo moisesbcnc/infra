@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -eu
-
+mkdir /tmp/prueba2210
 echo "steps:"
 
 # A step for each dir in specs/
